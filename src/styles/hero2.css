@@ -1,0 +1,27 @@
+.hero-2-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 60vw;
+    margin: 4rem;
+}
+
+.hero-2-container h1 {
+    margin-bottom: 2%;
+}
+
+.hero-2-container span {
+    margin: 0;
+    font-size: 20px;
+    opacity: .7;
+}
+
+.hero-2-container p {
+    margin-top: 2rem;
+    width: 60vw;
+    text-align: left;
+    font-weight: 200;
+    opacity: .7;
+    font-size: 20px;
+}
