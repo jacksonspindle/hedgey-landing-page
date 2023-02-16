@@ -1,9 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Nav = () => {
   return (
-    <div className="nav-container">
+    <motion.div
+      className="nav-container"
+      initial={{
+        y: "-150",
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{ delay: 2.7, duration: 2 }}
+    >
       <div className="item item1">
         <Link to={"/home"}>Hedgey Labs</Link>
       </div>
@@ -20,7 +31,7 @@ const Nav = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

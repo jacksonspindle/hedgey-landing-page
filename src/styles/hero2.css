@@ -1,3 +1,14 @@
+/* @font-face {
+    font-family: proxima-nova-extra-bold;
+    src: url(./../FontsFree-Net-Proxima-Nova-Xbold.otf);
+}
+
+@font-face {
+    font-family: proxima-nova-thin;
+    src: url(./../FontsFree-Net-Proxima-Nova-Thin.otf);
+
+} */
+
 .hero-2-container{
     display: flex;
     flex-direction: column;
@@ -5,6 +16,9 @@
     align-items: left;
     width: 60vw;
     margin: 4rem;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    /* font-family: proxima-nova-extra-bold; */
 }
 
 .hero-2-container h1 {

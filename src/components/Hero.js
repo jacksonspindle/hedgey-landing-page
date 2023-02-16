@@ -1,31 +1,84 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../logo.png";
+
+import { motion } from "framer-motion";
+import AnimatedTitle from "./AnimatedTitle";
 
 const Hero = () => {
   return (
     <div className="hero-container">
-      <div>
-        <h1 className="hero-text">We help token managers do the hard stuff.</h1>
+      <div className="hero-text">
+        {/* <motion.h1
+          initial={{
+            y: "-150",
+          }}
+          animate={{
+            color: "red",
+          }}
+          transition={{ delay: 0, duration: 2 }}
+          className="hero-text"
+        >
+          We help token managers do the hard stuff.
+        </motion.h1> */}
+        <AnimatedTitle text={"Token management for on-chain teams."} />
       </div>
       <div>
-        <p>
-          Free protocols to help token teams do vesting, distributions, lockups,
-          swaps, and more. From pre-launch to unicorn and everything in between.
-        </p>
+        <motion.p
+          initial={{
+            y: "-150",
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{ delay: 2.7, duration: 2 }}
+        >
+          Free, customizable tools for your on-chain vesting, distributions,
+          lockups, swaps and more.
+        </motion.p>
       </div>
-      <div className="hero-btns-container">
-        <Link className="get-started-btn" to="/get-started">
-          Get Started
+      <motion.div
+        initial={{
+          y: "-150",
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{ delay: 2.9, duration: 2 }}
+        className="hero-btns-container"
+      >
+        <Link className="get-started-button-hero" to="/get-started">
+          Get free, unlimited access
         </Link>
         <Link className="five-things-btn" to="/get-started">
-          5 things every token manager needs
+          5 things every treasury needs to know
         </Link>
-      </div>
-      <div className="hero-btns-container">
+      </motion.div>
+      {/* <motion.div
+        className="hero-btns-container"
+        initial={{
+          y: "-150",
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{ delay: 3, duration: 2 }}
+      >
         <span>On-chain. Audited. Used by the best</span>
-      </div>
-      <div className="logo-container">
+      </motion.div>
+      <motion.div
+        className="logo-container"
+        initial={{
+          y: "-150",
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{ delay: 3, duration: 2 }}
+      >
         <img className="logo-img" src={logo}></img>
         <img className="logo-img" src={logo}></img>
         <img className="logo-img" src={logo}></img>
@@ -39,7 +92,7 @@ const Hero = () => {
         <img className="logo-img" src={logo}></img>
         <img className="logo-img" src={logo}></img>
         <img className="logo-img" src={logo}></img>
-      </div>
+      </motion.div> */}
     </div>
   );
 };

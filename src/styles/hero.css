@@ -1,8 +1,37 @@
+@font-face {
+    font-family: proxima-nova-extra-bold;
+    src: url(./../FontsFree-Net-Proxima-Nova-Xbold.otf);
+}
+
+@font-face {
+    font-family: proxima-nova-thin;
+    src: url(./../FontsFree-Net-Proxima-Nova-Thin.otf);
+    
+}
+
+@font-face {
+    font-family: proxima-nova-rg-regular;
+    src: url(./../FontsFree-Net-proxima_nova_reg-webfont.ttf);
+    
+}
+
+
+
 .hero-container{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    margin-left: 4rem;
+    font-family: proxima-nova-extra-bold;
+    /* font-family: promixa-nova-thin; */
+    /* font-family: "proxima-nova", sans-serif; */
+    margin-left: 110px;
+    margin-top: 30px;
+    /* color: black; */
+    margin-bottom: 400px;
+    color: #363636;
+    /* font-weight: 200; */
 }
 
 .hero-text{
@@ -11,14 +40,22 @@
     text-align: center;
     margin-bottom: 5vh;
     margin-top:9vh;
+    letter-spacing: .03em;
+    
+    
 }
 
 .hero-container p {
-    margin-top: 0;
-    font-size: 27px;
+    margin-top: .7rem;
+    font-size: 20px;
     width: 60vw;
-    text-align: center;
-    font-weight: 200;
+    text-align: left;
+    font-weight: 800;
+    width: 420px;
+    line-height: 1.1em;
+    color: #363636;    
+    font-family: proxima-nova-thin;
+    
 }
 
 .hero-btns-container{
@@ -29,8 +66,8 @@
 }
 
 .five-things-btn{
-    border: 2px solid black;
-    padding: .5em 1rem .5rem 1rem;
+    border: 1px solid black;
+    /* padding: .5em 1rem .5rem 1rem; */
     border-radius: .5rem;
     color: black;
     background-color: #FFFFFF;
@@ -38,6 +75,29 @@
     height: 34px;
     display: flex;
     align-items: center;
+    width: 240px;
+    justify-content: center;
+    font-weight: 100;
+    height: 42px;
+}
+
+.get-started-button-hero{
+    border: 2px solid black;
+    border-radius: .5rem;
+    color: white;
+    background-color: #333333;
+    font-size: 12px;
+    height: 31px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 177px;
+    height: 40px;
+    font-weight: 100;
+    /* font-weight: 800; */
+    /* font-family: proxima-nova-thin; */
+    letter-spacing: .02em;
 }
 
 .logo-container {
@@ -46,6 +106,8 @@
     width: 60vw;
     justify-content: center;
     margin-top: 2rem;
+    align-items: center;
+    
 }
 
 .logo-img{
