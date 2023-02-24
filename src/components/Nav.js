@@ -9,7 +9,7 @@ const Nav = () => {
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
-
+    console.log(screenWidth);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

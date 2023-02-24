@@ -31,3 +31,13 @@
 .product-content-container{
     height: 300px;
 }
+
+.product-text-content-mobile{
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .complexSection-btn {
+        width:117px;
+    }
+}

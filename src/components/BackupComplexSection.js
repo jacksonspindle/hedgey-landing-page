@@ -1,22 +1,13 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useScroll } from "framer-motion";
 
 const ComplexSection = () => {
   const { ref, inView } = useInView();
-  let ref1 = useRef(null);
   let { scrollYProgress } = useScroll();
 
-  let refs = {
-    ref: ref,
-    ref1: ref1,
-  };
-
   const [scroll, setScroll] = useState(0);
-  const [buttonSelected, setButtonSelected] = useState(false);
-  const [buttonSelected2, setButnSelected2] = useState(false);
-  const [buttonSelected3, setButtonSelected3] = useState(false);
-  const [textContent, setTextContent] = useState("");
+  const [textContent, setTextContent] = useState("Vesting");
   const [position, setPosition] = useState(0);
 
   useEffect(() => {
@@ -32,10 +23,11 @@ const ComplexSection = () => {
   }, [inView]);
 
   useEffect(() => {
-    if (scroll < 0.17) {
-      setTextContent("");
+    if (scroll < 0.199) {
+      setTextContent("Vesting");
       setPosition(0);
-    } else if (scroll > 0.17 && scroll < 0.2397) {
+    } else if (scroll > 0.199 && scroll < 0.2397) {
+      // setTextContent("vesting");
       setPosition(1);
     } else if (scroll > 0.2397 && scroll < 0.335) {
       setPosition(2);
@@ -47,7 +39,7 @@ const ComplexSection = () => {
   }, [scroll]);
 
   useEffect(() => {
-    setTextContent("");
+    setTextContent("Vesting");
   }, [position]);
 
   return (
@@ -59,7 +51,7 @@ const ComplexSection = () => {
         height: "4500px",
         display: "flex",
         justifyContent: "left",
-        ...(scroll < 0.17
+        ...(scroll < 0.199
           ? { alignItems: "start" }
           : scroll > 0.625
           ? { alignItems: "end" }
@@ -84,8 +76,8 @@ const ComplexSection = () => {
             justifyContent: "center",
             alignItems: "center",
 
-            position: scroll < 0.17 || scroll > 0.625 ? "relative" : "fixed",
-            ...(scroll < 0.17 || scroll > 0.625
+            position: scroll < 0.199 || scroll > 0.625 ? "relative" : "fixed",
+            ...(scroll < 0.199 || scroll > 0.625
               ? {}
               : { top: "0px", left: "0px" }),
           }}
@@ -106,7 +98,7 @@ const ComplexSection = () => {
       </motion.div>
 
       <motion.div>
-        {scroll > 0.17 && scroll < 0.625 && (
+        {scroll > 0.199 && scroll < 0.625 && (
           <motion.div
             style={{
               color: "white",
@@ -170,7 +162,7 @@ const ComplexSection = () => {
                     }
                     className="complexSection-btn"
                   >
-                    Distribution
+                    Investor Lockups
                   </motion.button>
                   <motion.button
                     onClick={() => setTextContent("Swaps")}
@@ -190,6 +182,25 @@ const ComplexSection = () => {
                     className="complexSection-btn"
                   >
                     Swaps
+                  </motion.button>
+                  <motion.button
+                    onClick={() => setTextContent("Time-Locks")}
+                    style={
+                      textContent === "Time-Locks"
+                        ? {
+                            border: "2px solid white",
+                            transition: ".5s all ease-in-out",
+                            backgroundColor: "white",
+                            color: "#363636",
+                          }
+                        : {
+                            border: "2px solid grey",
+                            transition: ".5s all ease-in-out",
+                          }
+                    }
+                    className="complexSection-btn"
+                  >
+                    Time-Locks
                   </motion.button>
                 </motion.div>
                 <motion.div
@@ -217,7 +228,7 @@ const ComplexSection = () => {
                     1: For live token treasuries
                   </motion.h1>
 
-                  {textContent === "" ? (
+                  {/* {textContent === "" ? (
                     <motion.div
                       animate={{
                         opacity: 1,
@@ -251,10 +262,11 @@ const ComplexSection = () => {
                     </motion.div>
                   ) : (
                     ""
-                  )}
+                  )} */}
 
                   {textContent === "Vesting" ? (
                     <motion.div
+                      className="product-content-container"
                       initial={{ opacity: 0, y: -10 }}
                       animate={{
                         opacity: 1,
@@ -323,6 +335,7 @@ const ComplexSection = () => {
                         distribute locked tokens in a way that's composible to
                         their individual needs. Custodianship, governance
                         rights, and more ready to go out of the box.
+                        <br></br>
                       </motion.p>
                     </motion.div>
                   ) : textContent === "Swaps" ? (
@@ -349,6 +362,35 @@ const ComplexSection = () => {
                         Swap tokens using escrowless contracts built or on-chain
                         teams. Add lockups, custom unlock schedules, governance
                         rights and more - right out of the box.
+                      </motion.p>
+                    </motion.div>
+                  ) : textContent === "Time-Locks" ? (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{
+                        opacity: 1,
+                        y: 0,
+                        transition: { duration: 0.7 },
+                      }}
+                      key={textContent}
+                    >
+                      <motion.h1 className="product-page-subheader">
+                        {textContent}
+                      </motion.h1>
+                      <motion.p
+                        style={{
+                          fontSize: 27,
+                          fontFamily: "proxima-nova-thin",
+                        }}
+                      >
+                        1:4
+                        <br></br>
+                        Create a time-locked version of your token. This popular
+                        tool combines escrow contracts and locked-token NFTs to
+                        let teams do everything from distributing locked-tokens
+                        as compensation, to creating an incentive for holders to
+                        lock liquid tokens. Our weirdest and coolest product for
+                        live token communities.
                       </motion.p>
                     </motion.div>
                   ) : (
@@ -458,7 +500,7 @@ const ComplexSection = () => {
                     2: For setting up your big token launch
                   </motion.h1>
 
-                  {textContent === "" ? (
+                  {/* {textContent === "" ? (
                     <motion.div
                       initial={{ opacity: 0, y: -10 }}
                       animate={{
@@ -485,7 +527,7 @@ const ComplexSection = () => {
                     </motion.div>
                   ) : (
                     ""
-                  )}
+                  )} */}
 
                   {textContent === "Vesting" ? (
                     <motion.div
@@ -667,7 +709,7 @@ const ComplexSection = () => {
                     3: For doing your homework
                   </motion.h1>
 
-                  {textContent === "" ? (
+                  {/* {textContent === "" ? (
                     <motion.div
                       initial={{ opacity: 0, y: -10 }}
                       animate={{
@@ -694,7 +736,7 @@ const ComplexSection = () => {
                     </motion.div>
                   ) : (
                     ""
-                  )}
+                  )} */}
 
                   {textContent === "Vesting" ? (
                     <motion.div
