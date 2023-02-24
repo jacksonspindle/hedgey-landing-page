@@ -39,14 +39,21 @@ const Nav = () => {
       </div>
       <div className="item item2">
         <div className="item-content-1">
-          <Link to={"/pre-token"}>Pre-token</Link>
-          <Link to={"/drops"}>Drops</Link>
-          <Link to={"/careers"}>Careers</Link>
+          <Link to={"/pre-token"}>Documentation</Link>
+          <Link to={"/drops"}>Careers</Link>
+          <Link to={"/careers"}>Solutions</Link>
         </div>
         <div className="item-content-2">
-          <Link to={"/login"}>Log In</Link>
-          <Link className="get-started-btn" to={"/get-started"}>
-            Get Started
+          <Link
+            className="get-started-btn"
+            style={{
+              backgroundColor: "white",
+              color: "#363636",
+              border: "1px solid #363636",
+            }}
+            to={"/get-started"}
+          >
+            Get Access
           </Link>
         </div>
       </div>
@@ -112,16 +119,13 @@ const Nav = () => {
             style={{ pointerEvents: isOpen ? "auto" : "none" }}
           >
             <motion.li variants={itemVariants}>
-              <Link to={"/pre-token"}>Pre-token</Link>
+              <Link to={"/pre-token"}>Documentation</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
-              <Link to={"/drops"}>Drops</Link>
+              <Link to={"/drops"}>Careers</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
-              <Link to={"/careers"}>Careers</Link>
-            </motion.li>
-            <motion.li variants={itemVariants}>
-              <Link to={"/login"}>Log In</Link>
+              <Link to={"/careers"}>Solutions</Link>
             </motion.li>
           </motion.ul>
         </div>

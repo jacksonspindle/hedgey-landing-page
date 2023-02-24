@@ -15,6 +15,7 @@ import "../src/styles/complexSection.css";
 import "../src/styles/testimonial.css";
 import "../src/styles/partners.css";
 import "../src/styles/marquee.css";
+import "../src/styles/help.css";
 import Hero from "./components/Hero";
 import Hero5 from "./components/Hero5";
 import Footer from "./components/Footer";
@@ -23,6 +24,7 @@ import CallToAction from "./components/CallToAction";
 import FAQ from "./components/FAQ";
 import ComplexSection from "./components/complexSection";
 import Marquee from "./components/Marquee";
+import Help from "./components/Help";
 
 function App() {
   return (
@@ -46,6 +48,7 @@ function App() {
       <Marquee />
 
       <Testimonial />
+      <Help />
       <FAQ />
       <CallToAction />
       {/* <ScrollHero /> */}

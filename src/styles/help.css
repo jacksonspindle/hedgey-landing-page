@@ -1,0 +1,55 @@
+.help-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #363636;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.help-sub-container{
+    display: flex;
+    background-color: #363636;
+    color: #363636;
+    justify-content: center;
+    padding: 2rem;
+    /* gap: 2rem; */
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.help-text {
+    display: flex;
+    justify-content: center;
+    font-family: proxima-nova-extra-bold;
+    /* color: #363636; */
+    font-size: 22px;
+    color: white;
+}
+
+.help-subsection{ 
+    width: 25vw;
+    height: 25vw;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 1.6vh; */
+    /* padding: 2rem; */
+    
+}
+
+.help-subsection h2 {
+    padding: .5rem 0 .5rem 1rem;
+    font-size: 21px;
+    font-family: proxima-nova-thin;
+    /* font-weight: 800; */
+    margin-top: 2vh;
+}
+
+.help-subsection p {
+    padding: .5rem 0 .5rem 1rem;
+    font-size: 18px;
+    font-family: proxima-nova-thin; 
+}

@@ -9,17 +9,7 @@
     width: 100vw;
 }
 
-.twitter-tweet {
-    background-color: white;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    border-radius: 1rem;
-    border: 2px solid #999999;
-    
 
-}
 
 .twitter-pfp{
     width: 50px;

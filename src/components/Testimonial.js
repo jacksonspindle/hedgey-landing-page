@@ -2,21 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import gitcoinLogo from "../../src/gitcoinLogo.png";
 import gnosisLogo from "../../src/gnosisLogo.png";
-import shapeShiftLogo from "../../src/shapeShiftLogo.png";
 import defaultProfile from "../../src/defaultProfile.png";
+import protocolLabsLogo from "../protocolLabsLogo.png";
 
 const Testimonial = () => (
   <motion.div className="testimonial-container">
-    <motion.h1 className="testimonial-header">Testimonials</motion.h1>
+    {/* <motion.h1 className="testimonial-header">Testimonials</motion.h1>
     <motion.h3 className="testimonial-subheader">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </motion.h3>
+      Hedgey helped Gitcoin's treasury during a major inflection point. We were
+      able to streamline a diversification, invite a multitude of VCs to a
+      diversification event, and expand our runway by three years. These people
+      know what they are doing.
+    </motion.h3> */}
     <motion.div className="testimonial-block-container">
       <motion.div className="testimonial-block-column-1">
         <motion.div className="testimonial-block">
@@ -26,9 +23,10 @@ const Testimonial = () => (
             className="testimonial-brand-logo"
           ></motion.img>
           <motion.p className="testimonial-quote">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            Hedgey helped Gitcoin's treasury during a major inflection point. We
+            were able to streamline a diversification, invite a multitude of VCs
+            to a diversification event, and expand our runway by three years.
+            These people know what they are doing.
           </motion.p>
           <motion.div className="testimonial-profile-container">
             <img
@@ -39,7 +37,7 @@ const Testimonial = () => (
             <div className="testimonial-profile-text-container">
               <h1 className="testimonial-name">Kyle</h1>
               <span className="testimonial-affiliation">
-                Filler Affiliation
+                Gitcoin Foundation
               </span>
             </div>
           </motion.div>
@@ -47,13 +45,15 @@ const Testimonial = () => (
         <motion.div className="testimonial-block">
           <motion.img
             alt="logo"
-            src={gnosisLogo}
+            style={{ width: "300px" }}
+            src={protocolLabsLogo}
             className="testimonial-brand-logo"
           ></motion.img>
           <motion.p className="testimonial-quote">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            Hedgey helped Gitcoin's treasury during a major inflection point. We
+            were able to streamline a diversification, invite a multitude of VCs
+            to a diversification event, and expand our runway by three years.
+            These people know what they are doing.
           </motion.p>
           <motion.div className="testimonial-profile-container">
             <img
@@ -62,62 +62,8 @@ const Testimonial = () => (
               className="testimonial-profile-img"
             ></img>
             <div className="testimonial-profile-text-container">
-              <h1 className="testimonial-name">Stefan</h1>
-              <span className="testimonial-affiliation">
-                Filler Affiliation
-              </span>
-            </div>
-          </motion.div>
-        </motion.div>
-      </motion.div>
-      <motion.div className="testimonial-block-column-2">
-        <motion.div className="testimonial-block">
-          <motion.img
-            alt="logo"
-            src={shapeShiftLogo}
-            className="testimonial-brand-logo"
-          ></motion.img>
-          <motion.p className="testimonial-quote">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          </motion.p>
-          <motion.div className="testimonial-profile-container">
-            <img
-              alt="logo"
-              src={defaultProfile}
-              className="testimonial-profile-img"
-            ></img>
-            <div className="">
               <h1 className="testimonial-name">Brad</h1>
-              <span className="testimonial-affiliation">
-                Filler Affiliation
-              </span>
-            </div>
-          </motion.div>
-        </motion.div>
-        <motion.div className="testimonial-block">
-          <motion.img
-            alt="logo"
-            src=""
-            className="testimonial-brand-logo"
-          ></motion.img>
-          <motion.p className="testimonial-quote">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          </motion.p>
-          <motion.div className="testimonial-profile-container">
-            <img
-              alt="logo"
-              src={defaultProfile}
-              className="testimonial-profile-img"
-            ></img>
-            <div className="">
-              <h1 className="testimonial-name">Filler Name</h1>
-              <span className="testimonial-affiliation">
-                Filler Affiliation
-              </span>
+              <span className="testimonial-affiliation">Protocol Labs</span>
             </div>
           </motion.div>
         </motion.div>

@@ -3,21 +3,106 @@
     
     /* margin-right: 5rem; */
     margin-top: 10vh !important;
+    
+}
+
+.ticker-carousel-container h1 {
+    font-family: proxima-nova-extra-bold;
+    font-size: 44px;
+    padding: 2rem;
 }
 
 
 .marquee {
     /* display:inline !important; */
     /* margin-right: 0% !important; */
+    /* margin-right: none !important; */
+}
+
+.twitter-tweet {
+    background-color: white;
+    width: 236px;
+    height: 261px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(0, 0, 0, .2);
+    padding-bottom: 0;
 }
 
 
 .carousel {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     margin-right: 2rem;
 }
 
 /* .carousel div {
     margin: 3rem;
 } */
+
+.tweet-container hr {
+    width: 230px;
+    border: 1px solid lightgray;
+    /* height: 2rem; */
+}
+
+.tweet-author{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.tweet-author-container{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    
+}
+
+.twitter-badge{
+    width: 23px;
+}
+
+.twitter-likes-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    justify-content: space-between;
+
+}
+
+.twitter-likes-container img {
+    max-width: 20px;
+}
+
+.twitter-likes-container div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+
+.twitter-date{
+    opacity: .6;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    align-items: center;
+}
+
+.tweet-content{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter-profile-image{
+    max-width: 40px;
+    border-radius: 50%;
+}
