@@ -39,12 +39,6 @@ const Twitter = () => {
                 <a href="https://t.co/joW8IeJzvq">pic.twitter.com/joW8IeJzvq</a>
               </p>
               &mdash; Hedgey 🦔 (@hedgeyfinance)
-              <a
-                className="twitter-date"
-                href="https://twitter.com/hedgeyfinance/status/1626263119986057216?ref_src=twsrc%5Etfw"
-              >
-                February 16, 2023
-              </a>
             </div>
           </motion.blockquote>
           <motion.blockquote class="twitter-tweet">
@@ -78,12 +72,6 @@ const Twitter = () => {
                 <a href="https://t.co/joW8IeJzvq">pic.twitter.com/joW8IeJzvq</a>
               </p>
               &mdash; Hedgey 🦔 (@hedgeyfinance)
-              <a
-                className="twitter-date"
-                href="https://twitter.com/hedgeyfinance/status/1626263119986057216?ref_src=twsrc%5Etfw"
-              >
-                February 16, 2023
-              </a>
             </div>
           </motion.blockquote>
           <motion.blockquote class="twitter-tweet">
@@ -117,12 +105,6 @@ const Twitter = () => {
                 <a href="https://t.co/joW8IeJzvq">pic.twitter.com/joW8IeJzvq</a>
               </p>
               &mdash; Hedgey 🦔 (@hedgeyfinance)
-              <a
-                className="twitter-date"
-                href="https://twitter.com/hedgeyfinance/status/1626263119986057216?ref_src=twsrc%5Etfw"
-              >
-                February 16, 2023
-              </a>
             </div>
           </motion.blockquote>
           <motion.blockquote class="twitter-tweet">
@@ -156,12 +138,6 @@ const Twitter = () => {
                 <a href="https://t.co/joW8IeJzvq">pic.twitter.com/joW8IeJzvq</a>
               </p>
               &mdash; Hedgey 🦔 (@hedgeyfinance)
-              <a
-                className="twitter-date"
-                href="https://twitter.com/hedgeyfinance/status/1626263119986057216?ref_src=twsrc%5Etfw"
-              >
-                February 16, 2023
-              </a>
             </div>
           </motion.blockquote>
         </div>
