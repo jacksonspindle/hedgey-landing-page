@@ -17,7 +17,7 @@ const ComplexSection = () => {
     window.addEventListener("resize", handleResize);
     console.log(screenWidth);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  });
 
   useEffect(() => {
     scrollYProgress.onChange((v) => setScroll(v));
@@ -1061,7 +1061,7 @@ const ComplexSection = () => {
     <motion.div
       style={{
         backgroundColor: "black",
-        height: 4000,
+        height: 3300,
       }}
     >
       <motion.div

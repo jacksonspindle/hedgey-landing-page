@@ -11,7 +11,7 @@ const Nav = () => {
     window.addEventListener("resize", handleResize);
     console.log(screenWidth);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  });
 
   const itemVariants: Variants = {
     open: {
