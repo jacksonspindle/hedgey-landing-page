@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import twitterBadge from "../../src/twitterBadge.png";
 import Marquee from "react-fast-marquee";
 import twitterHeart from "../../src/twitterHeart.png";
 import twitterReply from "../../src/twitterReply.png";

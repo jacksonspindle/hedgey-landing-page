@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import gitcoinLogo from "../../src/gitcoinLogo.png";
-import gnosisLogo from "../../src/gnosisLogo.png";
 import defaultProfile from "../../src/defaultProfile.png";
 import protocolLabsLogo from "../protocolLabsLogo.png";
 
