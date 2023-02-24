@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import logo from "../logo.png";
 import gitcoinLogo from "../gitcoinLogo.png";
@@ -9,19 +9,15 @@ import banklessDAOLogo from "../banklessDAOLogo.png";
 import thalesLogo from "../thalesLogo.png";
 import venusLogo from "../venusLogo.png";
 import speraxLogo from "../speraxLogo.png";
+import raidGuildLogo from "../raidGuildLogo.png";
+import protocolLabsLogo from "../protocolLabsLogo.png";
+import OKXLogo from "../OKXLogo.png";
 
 const Partners = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        marginTop: "3rem",
-      }}
-    >
+    <div className="partners-container">
       <motion.div
-        className="hero-btns-container"
+        // className="hero-btns-container"
         initial={{
           y: "-40",
           opacity: 0,
@@ -33,7 +29,7 @@ const Partners = () => {
         transition={{ delay: 3, duration: 2 }}
       ></motion.div>
       <motion.div
-        className="logo-container"
+        // className="logo-container"
         initial={{
           y: "-40",
           opacity: 0,
@@ -42,23 +38,25 @@ const Partners = () => {
           opacity: 1,
           y: 0,
         }}
-        transition={{ delay: 3, duration: 2 }}
+        transition={{ duration: 1 }}
       >
-        <img className="logo-img" src={gitcoinLogoColor}></img>
-        <img className="logo-img" src={gnosisLogo}></img>
-        <img className="logo-img" src={shapeShiftLogo}></img>
-        <img className="logo-img" src={banklessDAOLogo}></img>
-        <img className="logo-img" src={thalesLogo}></img>
-        <img className="logo-img" src={venusLogo}></img>
-        <img className="logo-img" src={speraxLogo}></img>
-        <img className="logo-img" src={gitcoinLogoColor}></img>
-        <img className="logo-img" src={logo}></img>
-        <img className="logo-img" src={logo}></img>
-        <img className="logo-img" src={logo}></img>
-        <img className="logo-img" src={logo}></img>
-        <img className="logo-img" src={logo}></img>
+        <motion.div className="logos-top-row">
+          <span>Trusted by</span>
+          <img className="logo-img" src={gitcoinLogo}></img>
+          <img className="logo-img" src={gnosisLogo}></img>
+          <img className="logo-img" src={shapeShiftLogo}></img>
+          <img className="logo-img" src={raidGuildLogo}></img>
+          <img className="logo-img" src={venusLogo}></img>
+          <span>+40 more</span>
+        </motion.div>
+        {/* <motion.div className="logos-bottom-row">
+          <img className="logo-img" src={speraxLogo}></img>
+          <img className="logo-img" src={protocolLabsLogo}></img>
+          <img className="logo-img" src={OKXLogo}></img>
+        </motion.div> */}
       </motion.div>
-      <motion.span
+
+      {/* <motion.span
         initial={{
           y: "-40",
           opacity: 0,
@@ -67,18 +65,11 @@ const Partners = () => {
           opacity: 1,
           y: 0,
         }}
-        transition={{ delay: 3, duration: 2 }}
-        style={{
-          marginBottom: "-2rem",
-          fontSize: "17px",
-          marginTop: "1rem",
-          fontWeight: 700,
-          fontFamily: "proxima-nova-thin",
-          color: "#605E5E",
-        }}
+        transition={{ duration: 1 }}
+        className="partners-span"
       >
-        Trusted by the best web3 orgs
-      </motion.span>
+        Users of Hedgey
+      </motion.span> */}
     </div>
   );
 };

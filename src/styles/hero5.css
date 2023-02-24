@@ -8,8 +8,12 @@
     font-weight: 800;
     text-align: center;
     line-height: 1.2;
-    margin-top: 300px;
-    margin-bottom: 300px;
+    /* margin-top: 200px; */
+    /* margin-bottom: 300px; */
+    background-color: rgb(232,
+                230,
+                230);
+                padding: 10rem 10rem 10rem 10rem;
     /* padding: 10vw; */
     /* width: 100%; */
     color: #363636;
@@ -22,6 +26,7 @@
 
 .hero5-content {
     width: 760px;
+    
 }
 
 .hero5-btn {
@@ -42,6 +47,7 @@
     font-family: proxima-nova-thin;
     font-weight: 700;
     color: #363636;
+    font-size: 21px;
     
 }
 

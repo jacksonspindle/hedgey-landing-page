@@ -10,6 +10,11 @@ import "../src/styles/hero6.css";
 import "../src/styles/footer.css";
 import "../src/styles/main.css";
 import "../src/styles/faq.css";
+import "../src/styles/twitterFeed.css";
+import "../src/styles/complexSection.css";
+import "../src/styles/testimonial.css";
+import "../src/styles/partners.css";
+import "../src/styles/marquee.css";
 import Hero from "./components/Hero";
 import Hero2 from "./components/Hero2";
 import Hero3 from "./components/Hero3";
@@ -26,10 +31,14 @@ import Testimonial from "./components/Testimonial";
 import CallToAction from "./components/CallToAction";
 import FAQ from "./components/FAQ";
 import ComplexSection from "./components/complexSection";
+import TwitterFeed from "./components/TwitterFeed";
+import Marquee from "./components/Marquee";
+import Nav1 from "./components/NavTest";
 
 function App() {
   return (
     <div>
+      {/* <Nav1 /> */}
       <Nav />
 
       <Hero />
@@ -44,13 +53,17 @@ function App() {
       {/* <Hero6 /> */}
       <ComplexSection />
       {/* <Twitter /> */}
+      {/* <TwitterFeed /> */}
+      <Marquee />
+
       <Testimonial />
+      <FAQ />
       <CallToAction />
       {/* <ScrollHero /> */}
       {/* <AnimatedTitle text={"this is a test"} /> */}
-      <Hero4 />
+      {/* <Hero4 /> */}
       {/* <Hero5 /> */}
-      <FAQ />
+
       <Footer />
 
       <Routes>

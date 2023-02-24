@@ -6,32 +6,37 @@ const FAQ = () => {
 
   const faqItems = [
     {
-      question: "What is Lorem Ipsum?",
+      question: "How much does it cost?",
       answer:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-      question: "Why do we use it?",
+      question: "Is it audited?",
       answer:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
     {
-      question: "Where does it come from?",
+      question: "What networks do you support?",
       answer:
         "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
     },
     {
-      question: "What is Lorem Ipsum?",
+      question: "Is it Safe compatible?",
       answer:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
-      question: "Why do we use it?",
+      question: "Is it Custodian compatible?",
       answer:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
     {
-      question: "Where does it come from?",
+      question: "Who is this for?",
+      answer:
+        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    },
+    {
+      question: "How do I get started?",
       answer:
         "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
     },
@@ -47,7 +52,7 @@ const FAQ = () => {
       animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
       className="faqContainer"
     >
-      <h1>FAQ</h1>
+      <h1 className="faq-header">FAQ</h1>
       <br></br>
       <div className="faq-outer-container">
         {faqItems.map((item, index) => (
@@ -58,7 +63,7 @@ const FAQ = () => {
               <div
                 style={{
                   height: "3px",
-                  backgroundColor: "#999996",
+                  backgroundColor: "#D3D3D3",
                   width: "100%",
                 }}
               ></div>

@@ -4,19 +4,21 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Title = styled.h1`
-  font-size: 61px;
+  ${
+    "" /* font-size: 61px;
   text-align: left;
   width: 600px;
   line-height: 1em;
   font-weight: 600;
   margin-top: -20px;
-  margin-bottom: -40px;
+  margin-bottom: -40px; */
+  }
 `;
 
 const Word = styled(motion.span)`
   display: inline-block;
   margin-right: 0.25em;
-  white-space: nowrap;
+  ${"" /* white-space: nowrap; */}
 `;
 
 const Character = styled(motion.span)`
@@ -64,7 +66,7 @@ export default function AnimatedTitle(props) {
   };
 
   return (
-    <Title aria-label={text} role="heading">
+    <Title className="hero-text-content" aria-label={text} role="heading">
       {text.split(" ").map((word, index) => {
         return (
           <Word

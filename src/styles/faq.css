@@ -6,6 +6,11 @@
     
 }
 
+.faq-header {
+    font-family: proxima-nova-extra-bold !important;
+    font-size: 44px;
+}
+
 .faq-outer-container{
     background-color: #E8E6E6;
     border-radius: 20px;
@@ -65,13 +70,13 @@
 }
 
 .faqContainer h1, h3 {
-    font-family: proxima-nova-extra-bold;
-    font-weight: 100;
+    font-family: proxima-nova-rg-regular;
+    font-weight: 700;
     color: #363636;
 }
 
 .icon {
     font-size: 1.5rem;
-    color: #888;
+    color: #363636;
     padding: 1rem;
 }

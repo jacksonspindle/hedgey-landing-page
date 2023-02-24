@@ -4,20 +4,22 @@ import Partners from "./Partners";
 
 const Hero5 = () => {
   return (
-    <div className="hero5-container">
-      <div className="hero5-content">
-        From pre-launch to Unicorn, and every stage in between.
+    <div className="prelaunch-container">
+      <div>
+        Why do on-chain teams choose Hedgey?
         <br />
         <br />
         <p>
-          Beautiful interfaces powered by on-chain contracts to help you do your
-          biggest treasury jobs. Hyper customizable. Ultra secure. Built to set
-          you up for success today and 10 years down the road.
+          We've worked with the best on-chain teams during their biggest token
+          treasury jobs. We combine over $100b in treasury management experience
+          with on-chain tools built to do the job you need, exactly how it needs
+          to be done, in a way your team, community, and key stakeholders will
+          love.
         </p>
         {/* <Link className="hero5-btn" to="/get-started">
           Get Started
         </Link> */}
-        <Partners />
+        {/* <Partners /> */}
       </div>
     </div>
   );

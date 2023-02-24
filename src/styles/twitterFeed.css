@@ -1,0 +1,60 @@
+.twitter-container{
+    height: 3000px;
+    margin-top: 5rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    margin-bottom: 10rem;
+    width: 100vw;
+}
+
+.twitter-tweet {
+    background-color: white;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid #999999;
+    
+
+}
+
+.twitter-pfp{
+    width: 50px;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.twitter-badge {
+    width: 20px;
+}
+
+.twitter-account-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.twitter-account-name{
+    display: flex;
+    
+}
+
+
+.twitter-follow-btn-container{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+
+}
+
+.twitter-follow-btn-container a {
+    color: rgb(0, 111, 214);
+    font-weight: 900;
+    font-family: proxima-nova-extra-bold;
+}

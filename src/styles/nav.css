@@ -37,6 +37,7 @@ a {
 .item1 {
     flex-basis: 40%;
     display: flex;
+    min-width: 100px;
 }
 
 .item2 {
@@ -50,13 +51,15 @@ a {
 
 
 .item-content-1{
-    /* display: flex; */
-    /* width: 500px; */
+    display: flex;
+    width: 300px;
     /* background-color: red; */
+    justify-content: center;
 }
 
 .item-content-1 a {
     margin: 1rem;
+    
 }
 
 
@@ -70,6 +73,7 @@ a {
 .item-content-2 a {
     /* margin: 1rem; */
     /* width: 20vw; */
+    width: 100px;
     
 }
 /* .item3 {
@@ -94,3 +98,65 @@ a {
     font-family: "proxima-nova", sans-serif;
 }
 
+
+
+/* MOBILE */
+
+.nav-button {
+    width: 50px;
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    /* align-items: end; */
+    /* flex-direction: column; */
+    justify-content: center;
+    justify-content: space-between;
+    align-items: top;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    max-height: 150px;
+
+    
+    padding: 1rem;
+}
+
+.mobile-nav {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: .4rem;
+}
+
+
+.nav-dropdown{
+    /* position: absolute; */
+    /* right: 0; */
+    /* bottom: 20; */
+    /* top: 29px; */
+    display: flex;
+    align-items: top;
+
+
+    /* padding-top:7rem; */
+}
+
+.margin-left{
+    position: absolute;
+    right: 15%;
+}
+
+
+.hamburger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.logo-container-mobile {
+    padding-top: 20px;
+    /* padding-left: 7px; */
+}

@@ -15,23 +15,32 @@
     
 }
 
-
+.main-animation{
+    position: "absolute";
+    top: "200px";
+    right: "5vw";
+    z-index: -1;
+    width: 50%;
+    /* top: 700px !important; */
+    /* background-color: red; */
+}
 
 .hero-container{
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
     /* align-items: center; */
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
     font-family: proxima-nova-extra-bold;
     /* font-family: promixa-nova-thin; */
     /* font-family: "proxima-nova", sans-serif; */
-    margin-left: 110px;
+    /* margin-left: 110px; */
     margin-top: 30px;
     /* color: black; */
-    margin-bottom: 400px;
+    margin-bottom:15rem;
     color: #363636;
     /* font-weight: 200; */
+    /* width: 100vw; */
 }
 
 .hero-text{
@@ -41,6 +50,7 @@
     margin-bottom: 5vh;
     margin-top:9vh;
     letter-spacing: .03em;
+    margin-left: 110px;
     
     
 }
@@ -55,6 +65,7 @@
     line-height: 1.1em;
     color: #363636;    
     font-family: proxima-nova-thin;
+    margin-left: 110px;
     
 }
 
@@ -63,7 +74,10 @@
     align-items: center;
     gap: 3rem;
     margin-top: 2rem;
+    margin-left: 110px;
 }
+
+
 
 .five-things-btn{
     border: 1px solid black;
@@ -75,14 +89,21 @@
     height: 34px;
     display: flex;
     align-items: center;
-    width: 240px;
+    width: 108px;
     justify-content: center;
     font-weight: 100;
     height: 42px;
+    transition: all .5s ease-in-out;
+}
+
+.five-things-btn:hover{
+    background-color: yellow;
+    color: #363636;
+
 }
 
 .get-started-button-hero{
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: .5rem;
     color: white;
     background-color: #333333;
@@ -92,13 +113,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 177px;
+    width: 108px;
     height: 40px;
     font-weight: 100;
     /* font-weight: 800; */
     /* font-family: proxima-nova-thin; */
     letter-spacing: .02em;
+    transition: all .5s ease-in-out;
 }
+
+.get-started-button-hero:hover {
+    background-color: white;
+    color: #363636;
+}
+
 
 .logo-container {
     display: flex;
@@ -113,4 +141,49 @@
 .logo-img{
     width: 100px;
     
+}
+
+.hero-text-content {
+    font-size: 61px;
+        text-align: left;
+        width: 600px;
+        line-height: 1em;
+        font-weight: 600;
+        margin-top: -20px;
+        margin-bottom: -40px;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .hero-container{
+        margin-left: 0rem;
+        margin-top: 0;
+        align-items: start;
+        margin-bottom: 25rem;
+    }
+
+    .hero-container p {
+        max-width: 300px;
+    }
+    
+    .hero-text-content {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: end; */
+        
+    }
+
+    .hero-container-outer {
+        display: flex;
+        justify-content: center;
+        margin-top: -100px;
+    }
+    .main-animation{
+    top: 33rem !important;
+    right: 5rem !important;
+    width: 80%;
+
+    /* background-color: red; */
+}
 }
