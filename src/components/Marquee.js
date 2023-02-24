@@ -25,7 +25,7 @@ const Twitter = () => {
                   ></img>
                 </div>
                 <div className="twitter-follow-btn-container">
-                  <span>@HedgeyFinance</span>·<a>Follow</a>
+                  <span>@HedgeyFinance</span>·Follow
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Twitter = () => {
                   ></img>
                 </div>
                 <div className="twitter-follow-btn-container">
-                  <span>@HedgeyFinance</span>·<a>Follow</a>
+                  <span>@HedgeyFinance</span>.Follow
                 </div>
               </div>
             </div>
@@ -91,7 +91,7 @@ const Twitter = () => {
                   ></img>
                 </div>
                 <div className="twitter-follow-btn-container">
-                  <span>@HedgeyFinance</span>·<a>Follow</a>
+                  <span>@HedgeyFinance</span>·Follow
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ const Twitter = () => {
                   ></img>
                 </div>
                 <div className="twitter-follow-btn-container">
-                  <span>@HedgeyFinance</span>·<a>Follow</a>
+                  <span>@HedgeyFinance</span>·Follow
                 </div>
               </div>
             </div>
