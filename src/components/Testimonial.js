@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedTitle from "./AnimatedTitle";
 import { motion } from "framer-motion";
 import gitcoinLogo from "../../src/gitcoinLogo.png";
 import gnosisLogo from "../../src/gnosisLogo.png";
@@ -22,6 +21,7 @@ const Testimonial = () => (
       <motion.div className="testimonial-block-column-1">
         <motion.div className="testimonial-block">
           <motion.img
+            alt="logo"
             src={gitcoinLogo}
             className="testimonial-brand-logo"
           ></motion.img>
@@ -31,7 +31,11 @@ const Testimonial = () => (
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           </motion.p>
           <motion.div className="testimonial-profile-container">
-            <img src={defaultProfile} className="testimonial-profile-img"></img>
+            <img
+              alt="logo"
+              src={defaultProfile}
+              className="testimonial-profile-img"
+            ></img>
             <div className="testimonial-profile-text-container">
               <h1 className="testimonial-name">Kyle</h1>
               <span className="testimonial-affiliation">
@@ -42,6 +46,7 @@ const Testimonial = () => (
         </motion.div>
         <motion.div className="testimonial-block">
           <motion.img
+            alt="logo"
             src={gnosisLogo}
             className="testimonial-brand-logo"
           ></motion.img>
@@ -51,7 +56,11 @@ const Testimonial = () => (
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           </motion.p>
           <motion.div className="testimonial-profile-container">
-            <img src={defaultProfile} className="testimonial-profile-img"></img>
+            <img
+              alt="logo"
+              src={defaultProfile}
+              className="testimonial-profile-img"
+            ></img>
             <div className="testimonial-profile-text-container">
               <h1 className="testimonial-name">Stefan</h1>
               <span className="testimonial-affiliation">
@@ -64,6 +73,7 @@ const Testimonial = () => (
       <motion.div className="testimonial-block-column-2">
         <motion.div className="testimonial-block">
           <motion.img
+            alt="logo"
             src={shapeShiftLogo}
             className="testimonial-brand-logo"
           ></motion.img>
@@ -73,7 +83,11 @@ const Testimonial = () => (
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           </motion.p>
           <motion.div className="testimonial-profile-container">
-            <img src={defaultProfile} className="testimonial-profile-img"></img>
+            <img
+              alt="logo"
+              src={defaultProfile}
+              className="testimonial-profile-img"
+            ></img>
             <div className="">
               <h1 className="testimonial-name">Brad</h1>
               <span className="testimonial-affiliation">
@@ -83,14 +97,22 @@ const Testimonial = () => (
           </motion.div>
         </motion.div>
         <motion.div className="testimonial-block">
-          <motion.img src="" className="testimonial-brand-logo"></motion.img>
+          <motion.img
+            alt="logo"
+            src=""
+            className="testimonial-brand-logo"
+          ></motion.img>
           <motion.p className="testimonial-quote">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           </motion.p>
           <motion.div className="testimonial-profile-container">
-            <img src={defaultProfile} className="testimonial-profile-img"></img>
+            <img
+              alt="logo"
+              src={defaultProfile}
+              className="testimonial-profile-img"
+            ></img>
             <div className="">
               <h1 className="testimonial-name">Filler Name</h1>
               <span className="testimonial-affiliation">

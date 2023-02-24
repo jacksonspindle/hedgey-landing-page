@@ -4,18 +4,9 @@ import { motion, useScroll } from "framer-motion";
 
 const ComplexSection = () => {
   const { ref, inView } = useInView();
-  let ref1 = useRef(null);
   let { scrollYProgress } = useScroll();
 
-  let refs = {
-    ref: ref,
-    ref1: ref1,
-  };
-
   const [scroll, setScroll] = useState(0);
-  const [buttonSelected, setButtonSelected] = useState(false);
-  const [buttonSelected2, setButnSelected2] = useState(false);
-  const [buttonSelected3, setButtonSelected3] = useState(false);
   const [textContent, setTextContent] = useState("Vesting");
   const [position, setPosition] = useState(0);
 

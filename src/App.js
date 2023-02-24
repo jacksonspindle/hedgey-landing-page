@@ -16,24 +16,13 @@ import "../src/styles/testimonial.css";
 import "../src/styles/partners.css";
 import "../src/styles/marquee.css";
 import Hero from "./components/Hero";
-import Hero2 from "./components/Hero2";
-import Hero3 from "./components/Hero3";
-import Hero4 from "./components/Hero4";
 import Hero5 from "./components/Hero5";
-import ScrollHero from "./components/ScrollHero";
 import Footer from "./components/Footer";
-import AnimatedTitle from "./components/AnimatedTitle";
-import Hero6 from "./components/Hero6";
-import FixedDiv from "./components/FixedDiv";
-import Partners from "./components/Partners";
-import Intro from "./components/Intro";
 import Testimonial from "./components/Testimonial";
 import CallToAction from "./components/CallToAction";
 import FAQ from "./components/FAQ";
 import ComplexSection from "./components/complexSection";
-import TwitterFeed from "./components/TwitterFeed";
 import Marquee from "./components/Marquee";
-import Nav1 from "./components/NavTest";
 
 function App() {
   return (

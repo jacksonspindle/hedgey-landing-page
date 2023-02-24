@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import mediumLogo from "../medium-logo.png";
-import twitterLogo from "../twitter-logo.png";
-import mailLogo from "../mail-logo.png";
 
 const Footer = () => {
   return (

@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedTitle from "./AnimatedTitle";
 import { motion } from "framer-motion";
 
 const CallToAction = () => {

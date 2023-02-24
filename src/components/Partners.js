@@ -1,17 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import logo from "../logo.png";
 import gitcoinLogo from "../gitcoinLogo.png";
-import gitcoinLogoColor from "../gitcoinLogoColor.png";
 import gnosisLogo from "../gnosisLogo.png";
 import shapeShiftLogo from "../shapeShiftLogo.png";
-import banklessDAOLogo from "../banklessDAOLogo.png";
-import thalesLogo from "../thalesLogo.png";
 import venusLogo from "../venusLogo.png";
-import speraxLogo from "../speraxLogo.png";
 import raidGuildLogo from "../raidGuildLogo.png";
-import protocolLabsLogo from "../protocolLabsLogo.png";
-import OKXLogo from "../OKXLogo.png";
 
 const Partners = () => {
   return (
@@ -42,11 +35,11 @@ const Partners = () => {
       >
         <motion.div className="logos-top-row">
           <span>Trusted by</span>
-          <img className="logo-img" src={gitcoinLogo}></img>
-          <img className="logo-img" src={gnosisLogo}></img>
-          <img className="logo-img" src={shapeShiftLogo}></img>
-          <img className="logo-img" src={raidGuildLogo}></img>
-          <img className="logo-img" src={venusLogo}></img>
+          <img alt="logos" className="logo-img" src={gitcoinLogo}></img>
+          <img alt="logos" className="logo-img" src={gnosisLogo}></img>
+          <img alt="logos" className="logo-img" src={shapeShiftLogo}></img>
+          <img alt="logos" className="logo-img" src={raidGuildLogo}></img>
+          <img alt="logos" className="logo-img" src={venusLogo}></img>
           <span>+40 more</span>
         </motion.div>
         {/* <motion.div className="logos-bottom-row">
