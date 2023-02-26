@@ -4,6 +4,7 @@
     flex-direction: column;
     margin-top: 28vh;
     max-height: 0px;
+    margin-left: -1rem;
     /* margin-bottom: 3rem; */
 }
 

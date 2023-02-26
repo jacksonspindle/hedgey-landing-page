@@ -11,6 +11,7 @@ const CallToAction = () => {
         flexDirection: "column",
         height: 600,
         alignItems: "center",
+        padding: "1rem",
       }}
     >
       <h1
@@ -31,7 +32,9 @@ const CallToAction = () => {
           fontWeight: 600,
         }}
       >
-        <p>Book at 15 minute call to get free access for life.</p>
+        <p style={{ textAlign: "center" }}>
+          Book at 15 minute call to get free access for life.
+        </p>
       </div>
       <button
         style={{ marginTop: "2rem", color: "white" }}

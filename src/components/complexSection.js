@@ -1061,7 +1061,7 @@ const ComplexSection = () => {
     <motion.div
       style={{
         backgroundColor: "black",
-        height: 3300,
+        height: 3400,
       }}
     >
       <motion.div
@@ -1237,6 +1237,7 @@ const ComplexSection = () => {
               }}
               key={textContent}
               exit={{ opacity: 0, transition: { duration: 1 } }}
+              className="product-content-container"
             >
               <motion.h1 className="product-page-subheader">
                 {textContent}
@@ -1266,6 +1267,7 @@ const ComplexSection = () => {
                 transition: { duration: 0.7 },
               }}
               key={textContent}
+              className={"product-content-container"}
             >
               <motion.h1 className="product-page-subheader">
                 {textContent}
@@ -1471,6 +1473,7 @@ const ComplexSection = () => {
               }}
               key={textContent}
               exit={{ opacity: 0, transition: { duration: 1 } }}
+              className={"product-content-container"}
             >
               <motion.h1 className="product-page-subheader">
                 Community Claims
@@ -1498,6 +1501,7 @@ const ComplexSection = () => {
                 transition: { duration: 0.7 },
               }}
               key={textContent}
+              className="product-content-container"
             >
               <motion.h1 className="product-page-subheader">
                 Teams and Investors
@@ -1684,6 +1688,7 @@ const ComplexSection = () => {
               }}
               key={textContent}
               exit={{ opacity: 0, transition: { duration: 1 } }}
+              className="product-content-container"
             >
               <motion.h1 className="product-page-subheader">
                 Live Tokens
@@ -1853,7 +1858,7 @@ const ComplexSection = () => {
 
           {textContent === "Vesting" ? (
             <motion.div
-              className="product-content-container"
+              // className="product-content-container"
               initial={{ opacity: 0, y: -10 }}
               animate={{
                 opacity: 1,
@@ -1862,6 +1867,7 @@ const ComplexSection = () => {
               }}
               key={textContent}
               exit={{ opacity: 0, transition: { duration: 1 } }}
+              className="product-content-container"
             >
               <motion.h1 className="product-page-subheader">Team</motion.h1>
               <motion.p
@@ -1887,6 +1893,7 @@ const ComplexSection = () => {
               }}
               key={textContent}
               exit={{ opacity: 0, transition: { duration: 1 } }}
+              className="product-content-container"
             >
               <motion.h1 className="product-page-subheader">
                 Community
@@ -1914,6 +1921,8 @@ const ComplexSection = () => {
                 transition: { duration: 0.7 },
               }}
               key={textContent}
+              className="product-content-container"
+              style={{ height: "400px" }}
             >
               <motion.h1 className="product-page-subheader">
                 Investors

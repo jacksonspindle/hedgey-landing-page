@@ -87,3 +87,14 @@
 .testimonial-affiliation {
     font-family: proxima-nova-thin;
 }
+
+
+@media only screen and (max-width: 720px) {
+.testimonial-block-column-1 {
+        flex-basis: 1;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+}
