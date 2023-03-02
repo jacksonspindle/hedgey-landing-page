@@ -82,7 +82,7 @@ const ComplexSection = () => {
 
   useEffect(() => {
     if (scroll < 0.2) {
-      setTextContent("Vesting");
+      // setTextContent("Vesting");
       setPosition(0);
     } else if (scroll > 0.2 && scroll < 0.2397) {
       // setTextContent("vesting");
@@ -106,7 +106,7 @@ const ComplexSection = () => {
         setTextContent("Pre-token");
       }
     }
-  }, [position]);
+  }, [position, screenWidth]);
 
   useEffect(() => {
     console.log("mobile position", mobilePosition);
@@ -115,7 +115,7 @@ const ComplexSection = () => {
         setMobilePosition(1);
       }
     }
-  }, [scroll]);
+  }, [scroll, screenWidth, mobilePosition]);
 
   return screenWidth > 800 ? (
     <motion.div

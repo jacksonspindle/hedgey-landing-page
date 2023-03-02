@@ -21,11 +21,9 @@ import Hero from "./components/Hero";
 import Hero5 from "./components/Hero5";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
-import CallToAction from "./components/CallToAction";
 import FAQ from "./components/FAQ";
 import ComplexSection from "./components/complexSection";
 import Marquee from "./components/Marquee";
-import Help from "./components/Help";
 import ReadMore from "./components/ReadMore";
 
 function App() {
