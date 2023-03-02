@@ -22,7 +22,7 @@ const Partners = () => {
         transition={{ delay: 3, duration: 2 }}
       ></motion.div>
       <motion.div
-        // className="logo-container"
+        className="logos-section-container"
         initial={{
           y: "-40",
           opacity: 0,
@@ -35,11 +35,13 @@ const Partners = () => {
       >
         <motion.div className="logos-top-row">
           <span>Trusted by</span>
-          <img alt="logos" className="logo-img" src={gitcoinLogo}></img>
-          <img alt="logos" className="logo-img" src={gnosisLogo}></img>
-          <img alt="logos" className="logo-img" src={shapeShiftLogo}></img>
-          <img alt="logos" className="logo-img" src={raidGuildLogo}></img>
-          <img alt="logos" className="logo-img" src={venusLogo}></img>
+          <div className="logos-container">
+            <img alt="logos" className="logo-img" src={gitcoinLogo}></img>
+            <img alt="logos" className="logo-img" src={gnosisLogo}></img>
+            <img alt="logos" className="logo-img" src={shapeShiftLogo}></img>
+            <img alt="logos" className="logo-img" src={raidGuildLogo}></img>
+            <img alt="logos" className="logo-img" src={venusLogo}></img>
+          </div>
           <span>+40 more</span>
         </motion.div>
         {/* <motion.div className="logos-bottom-row">

@@ -16,6 +16,7 @@ import "../src/styles/testimonial.css";
 import "../src/styles/partners.css";
 import "../src/styles/marquee.css";
 import "../src/styles/help.css";
+import "../src/styles/readmore.css";
 import Hero from "./components/Hero";
 import Hero5 from "./components/Hero5";
 import Footer from "./components/Footer";
@@ -25,6 +26,7 @@ import FAQ from "./components/FAQ";
 import ComplexSection from "./components/complexSection";
 import Marquee from "./components/Marquee";
 import Help from "./components/Help";
+import ReadMore from "./components/ReadMore";
 
 function App() {
   return (
@@ -48,13 +50,14 @@ function App() {
       <Marquee />
 
       <Testimonial />
-      <Help />
+      {/* <Help /> */}
       <FAQ />
-      <CallToAction />
+      {/* <CallToAction /> */}
       {/* <ScrollHero /> */}
       {/* <AnimatedTitle text={"this is a test"} /> */}
       {/* <Hero4 /> */}
       {/* <Hero5 /> */}
+      <ReadMore />
 
       <Footer />
 
