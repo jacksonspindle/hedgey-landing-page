@@ -1,5 +1,5 @@
 import Nav from "./components/Nav";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "../src/styles/nav.css";
 import "../src/styles/hero.css";
 import "../src/styles/hero2.css";
@@ -17,46 +17,29 @@ import "../src/styles/partners.css";
 import "../src/styles/marquee.css";
 import "../src/styles/help.css";
 import "../src/styles/readmore.css";
-import Hero from "./components/Hero";
-import Hero5 from "./components/Hero5";
+// import Hero from "./components/Hero";
+// import Hero5 from "./components/Hero5";
+// import Footer from "./components/Footer";
+// import Testimonial from "./components/Testimonial";
+// import FAQ from "./components/FAQ";
+// import ComplexSection from "./components/complexSection";
+// import Marquee from "./components/Marquee";
+// import ReadMore from "./components/ReadMore";
+// import ProductPage from "./components/ProductPage";
+import Home from "./components/Home";
+import ProductPage from "./components/ProductPage";
 import Footer from "./components/Footer";
-import Testimonial from "./components/Testimonial";
-import FAQ from "./components/FAQ";
-import ComplexSection from "./components/complexSection";
-import Marquee from "./components/Marquee";
-import ReadMore from "./components/ReadMore";
 
 function App() {
+  const location = useLocation();
+
+  console.log(location);
+
   return (
     <div>
-      {/* <Nav1 /> */}
       <Nav />
-
-      <Hero />
-
-      <Hero5 />
-      {/* <Partners /> */}
-      {/* <Intro /> */}
-      {/* <Hero2 /> */}
-
-      {/* <Hero3 /> */}
-
-      {/* <Hero6 /> */}
-      <ComplexSection />
-      {/* <Twitter /> */}
-      {/* <TwitterFeed /> */}
-      <Marquee />
-
-      <Testimonial />
-      {/* <Help /> */}
-      <FAQ />
-      {/* <CallToAction /> */}
-      {/* <ScrollHero /> */}
-      {/* <AnimatedTitle text={"this is a test"} /> */}
-      {/* <Hero4 /> */}
-      {/* <Hero5 /> */}
-      <ReadMore />
-
+      {location.pathname === "/" ? <Home /> : null}
+      {location.pathname === "/product" ? <ProductPage /> : null}
       <Footer />
 
       <Routes>
@@ -65,6 +48,7 @@ function App() {
         <Route path="/careers" element={""}></Route>
         <Route path="/login" element={""}></Route>
         <Route path="/get-started" element={""}></Route>
+        <Route path="/product" element={""}></Route>
       </Routes>
     </div>
   );

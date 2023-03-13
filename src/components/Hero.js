@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import AnimatedTitle from "./AnimatedTitle";
 import mainAnimation from "../mainAnimation.mov";
 import Partners from "./Partners";
+import animation1Desktop from "../animation1_desktop.mov";
 
 const Hero = () => {
   return (
@@ -66,8 +67,11 @@ const Hero = () => {
               top: "200px",
               right: "5vw",
               zIndex: -1,
+              width: 250,
+              borderRadius: "2rem",
             }}
-            src={mainAnimation}
+            // src={mainAnimation}
+            src={animation1Desktop}
             // width="50%"
             height="auto"
             // controls="controls"

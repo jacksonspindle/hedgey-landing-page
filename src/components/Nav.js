@@ -79,7 +79,7 @@ const Nav = () => {
       className="menu"
     >
       <div>
-        <Link className="logo-container-mobile" to={"/home"}>
+        <Link className="logo-container-mobile" to={"/"}>
           <br></br>
           Hedgey Labs
         </Link>
@@ -119,7 +119,7 @@ const Nav = () => {
             style={{ pointerEvents: isOpen ? "auto" : "none" }}
           >
             <motion.li variants={itemVariants}>
-              <Link to={"/pre-token"}>Documentation</Link>
+              <Link to={"/product"}>Documentation</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
               <Link to={"/drops"}>Careers</Link>
