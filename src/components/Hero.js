@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
 import AnimatedTitle from "./AnimatedTitle";
-import mainAnimation from "../mainAnimation.mov";
+// import mainAnimation from "../mainAnimation.mov";
 import Partners from "./Partners";
 import animation1Desktop from "../animation1_desktop.mov";
 

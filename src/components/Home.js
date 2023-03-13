@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 import Hero from "./Hero";
 import Hero5 from "./Hero5";
 import ComplexSection from "./complexSection";
@@ -7,7 +7,7 @@ import Marquee from "./Marquee";
 import Testimonial from "./Testimonial";
 import FAQ from "./FAQ";
 import ReadMore from "./ReadMore";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 const Home = () => {
   return (
